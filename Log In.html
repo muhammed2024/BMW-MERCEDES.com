@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://s3.caradvice.com.au/wp-content/uploads/2017/04/2017-BMW-530i-vs-Mercedes-Benz-E300-sedan-151.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: up;
+        }
+        .login-form {
+            background-color: none;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: none;
+            text-align: center;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            color: black;
+        }
+        .login-form button {
+            width: 104%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h2 style="color: black;">Login</h2>
+        <input type="text" id="username" placeholder="Username" style="border-radius: 20px;">
+        <input type="password" id="password" placeholder="Password" style="border-radius: 20px;">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "123" && password === "123") {
+                window.location.href = "file:///E:/Practical/BMW%20&%20MERCEDES.html";L 
+                 
+            
+                
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
